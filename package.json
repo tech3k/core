@@ -1,0 +1,22 @@
+{
+  "name": "@tech3k/core",
+  "version": "0.0.13",
+  "description": "Core package for Tech3k Projects",
+  "main": "lib/index.js",
+  "scripts": {
+    "deploy": "rm -rf lib && npm run lint && npm run build && npm publish --access public",
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simon Skinner <simon@tech3k.co.uk>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
